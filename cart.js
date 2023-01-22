@@ -14,6 +14,7 @@ let boxContainerDiv = document.createElement('div')
 boxContainerDiv.id = 'boxContainer'
 let price = 0;
 let index = 1;
+contentTitle = JSON.parse(this.responseText)
 // DYNAMIC CODE TO SHOW THE SELECTED ITEMS IN YOUR CART
 function dynamicCartSection(ob,itemCounter)
 {
@@ -60,7 +61,7 @@ function dynamicCartSection(ob,itemCounter)
         document.getElementById("badge").innerHTML = counter
         totalAmount -= Number(contentTitle[item[index]-1].price) * itemCounter
                 dynamicCartSection(contentTitle[item[index]-1],itemCounter)
-
+        delete contentTitle[index]
                 amountUpdate(totalAmount)
         document.getElementById("totalItem").innerHTML = ('Total Items: ' + counter)
         console.log(document.cookie)
