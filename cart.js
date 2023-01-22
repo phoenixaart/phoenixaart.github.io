@@ -56,7 +56,7 @@ function dynamicCartSection(ob,itemCounter)
             //index = index + 1
             order = index + " " + document.cookie.split(',')[0].split('=')[1]
             counter = Number(document.cookie.split(',')[1].split('=')[1]) - itemCounter
-      delete contentTitle[index]
+     // delete contentTitle[index]
   }
         document.cookie = "orderId=" + order + ",counter=" + counter
         document.getElementById("badge").innerHTML = counter
