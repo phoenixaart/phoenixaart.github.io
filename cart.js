@@ -14,7 +14,7 @@ let boxContainerDiv = document.createElement('div')
 boxContainerDiv.id = 'boxContainer'
 let price = 0;
 let index = 1;
-contentTitle = JSON.parse(this.responseText)
+//contentTitle = JSON.parse(this.responseText)
 // DYNAMIC CODE TO SHOW THE SELECTED ITEMS IN YOUR CART
 function dynamicCartSection(ob,itemCounter)
 {
